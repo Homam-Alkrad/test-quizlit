@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>اختبار الصيغ الكيميائية للمركبات العضوية</title>
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="quiz-container">
-        <h1>اختبار الصيغ الكيميائية للمركبات العضوية</h1>
+        <div class="header">
+            <h1>اختبار الصيغ الكيميائية للمركبات العضوية</h1>
+            <div class="score">النتيجة: <span id="score-display">0/5</span></div>
+        </div>
         <div class="progress-bar">
             <div id="progress"></div>
         </div>
@@ -63,30 +67,41 @@
 
             <!-- Flashcard Questions (Last 5) -->
             <div class="question flashcard" data-answer="C<sub>2</sub>H<sub>4</sub>">
-                <p>ما هي الصيغة الكيميائية للإيثيلين؟</p>
-                <div class="flashcard-answer" style="display: none;">C<sub>2</sub>H<sub>4</sub></div>
+                <div class="card">
+                    <div class="front">ما هي الصيغة الكيميائية للإيثيلين؟</div>
+                    <div class="back">C<sub>2</sub>H<sub>4</sub></div>
+                </div>
             </div>
             <div class="question flashcard" data-answer="C<sub>3</sub>H<sub>8</sub>">
-                <p>ما هي الصيغة الكيميائية للبروبان؟</p>
-                <div class="flashcard-answer" style="display: none;">C<sub>3</sub>H<sub>8</sub></div>
+                <div class="card">
+                    <div class="front">ما هي الصيغة الكيميائية للبروبان؟</div>
+                    <div class="back">C<sub>3</sub>H<sub>8</sub></div>
+                </div>
             </div>
             <div class="question flashcard" data-answer="CH<sub>3</sub>CHO">
-                <p>ما هي الصيغة الكيميائية للأسيتالدهيد؟</p>
-                <div class="flashcard-answer" style="display: none;">CH<sub>3</sub>CHO</div>
+                <div class="card">
+                    <div class="front">ما هي الصيغة الكيميائية للأسيتالدهيد؟</div>
+                    <div class="back">CH<sub>3</sub>CHO</div>
+                </div>
             </div>
             <div class="question flashcard" data-answer="CH<sub>3</sub>COCH<sub>3</sub>">
-                <p>ما هي الصيغة الكيميائية للأسيتون؟</p>
-                <div class="flashcard-answer" style="display: none;">CH<sub>3</sub>COCH<sub>3</sub></div>
+                <div class="card">
+                    <div class="front">ما هي الصيغة الكيميائية للأسيتون؟</div>
+                    <div class="back">CH<sub>3</sub>COCH<sub>3</sub></div>
+                </div>
             </div>
             <div class="question flashcard" data-answer="C<sub>2</sub>H<sub>2</sub>">
-                <p>ما هي الصيغة الكيميائية للأسيتيلين؟</p>
-                <div class="flashcard-answer" style="display: none;">C<sub>2</sub>H<sub>2</sub></div>
+                <div class="card">
+                    <div class="front">ما هي الصيغة الكيميائية للأسيتيلين؟</div>
+                    <div class="back">C<sub>2</sub>H<sub>2</sub></div>
+                </div>
             </div>
         </div>
 
         <div class="buttons">
             <button id="showAnswer">عرض الإجابة</button>
             <button id="next">التالي</button>
+            <button id="restart" style="display: none;">إعادة الاختبار</button>
         </div>
 
         <div id="result"></div>
