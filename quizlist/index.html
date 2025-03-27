@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار الصيغ الكيميائية للمركبات العضوية</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>اختبار الصيغ الكيميائية للمركبات العضوية</h1>
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+
+        <div id="questions">
+            <!-- Multiple Choice Questions (First 5) -->
+            <div class="question mc" data-answer="C<sub>4</sub>H<sub>10</sub>">
+                <p>ما هي الصيغة الكيميائية لـ 2-ميثيل البروبان؟</p>
+                <div class="options">
+                    <label><input type="radio" name="q0" value="C<sub>4</sub>H<sub>10</sub>"> C<sub>4</sub>H<sub>10</sub></label>
+                    <label><input type="radio" name="q0" value="C<sub>3</sub>H<sub>8</sub>"> C<sub>3</sub>H<sub>8</sub></label>
+                    <label><input type="radio" name="q0" value="C<sub>2</sub>H<sub>6</sub>"> C<sub>2</sub>H<sub>6</sub></label>
+                    <label><input type="radio" name="q0" value="C<sub>5</sub>H<sub>12</sub>"> C<sub>5</sub>H<sub>12</sub></label>
+                </div>
+            </div>
+            <div class="question mc" data-answer="CH<sub>4</sub>">
+                <p>ما هي الصيغة الكيميائية للميثان؟</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="CH<sub>4</sub>"> CH<sub>4</sub></label>
+                    <label><input type="radio" name="q1" value="CH<sub>3</sub>OH"> CH<sub>3</sub>OH</label>
+                    <label><input type="radio" name="q1" value="C<sub>2</sub>H<sub>4</sub>"> C<sub>2</sub>H<sub>4</sub></label>
+                    <label><input type="radio" name="q1" value="C<sub>3</sub>H<sub>8</sub>"> C<sub>3</sub>H<sub>8</sub></label>
+                </div>
+            </div>
+            <div class="question mc" data-answer="C<sub>2</sub>H<sub>5</sub>OH">
+                <p>ما هي الصيغة الكيميائية للإيثانول؟</p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="C<sub>2</sub>H<sub>5</sub>OH"> C<sub>2</sub>H<sub>5</sub>OH</label>
+                    <label><input type="radio" name="q2" value="CH<sub>3</sub>COOH"> CH<sub>3</sub>COOH</label>
+                    <label><input type="radio" name="q2" value="C<sub>2</sub>H<sub>4</sub>"> C<sub>2</sub>H<sub>4</sub></label>
+                    <label><input type="radio" name="q2" value="CH<sub>3</sub>OH"> CH<sub>3</sub>OH</label>
+                </div>
+            </div>
+            <div class="question mc" data-answer="CH<sub>3</sub>COOH">
+                <p>ما هي الصيغة الكيميائية لحمض الخليك؟</p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="CH<sub>3</sub>COOH"> CH<sub>3</sub>COOH</label>
+                    <label><input type="radio" name="q3" value="CH<sub>3</sub>CHO"> CH<sub>3</sub>CHO</label>
+                    <label><input type="radio" name="q3" value="CH<sub>3</sub>OH"> CH<sub>3</sub>OH</label>
+                    <label><input type="radio" name="q3" value="C<sub>2</sub>H<sub>5</sub>OH"> C<sub>2</sub>H<sub>5</sub>OH</label>
+                </div>
+            </div>
+            <div class="question mc" data-answer="C<sub>6</sub>H<sub>6</sub>">
+                <p>ما هي الصيغة الكيميائية للبنزين؟</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="C<sub>6</sub>H<sub>6</sub>"> C<sub>6</sub>H<sub>6</sub></label>
+                    <label><input type="radio" name="q4" value="C<sub>6</sub>H<sub>12</sub>"> C<sub>6</sub>H<sub>12</sub></label>
+                    <label><input type="radio" name="q4" value="C<sub>6</sub>H<sub>14</sub>"> C<sub>6</sub>H<sub>14</sub></label>
+                    <label><input type="radio" name="q4" value="C<sub>5</sub>H<sub>10</sub>"> C<sub>5</sub>H<sub>10</sub></label>
+                </div>
+            </div>
+
+            <!-- Flashcard Questions (Last 5) -->
+            <div class="question flashcard" data-answer="C<sub>2</sub>H<sub>4</sub>">
+                <p>ما هي الصيغة الكيميائية للإيثيلين؟</p>
+                <div class="flashcard-answer" style="display: none;">C<sub>2</sub>H<sub>4</sub></div>
+            </div>
+            <div class="question flashcard" data-answer="C<sub>3</sub>H<sub>8</sub>">
+                <p>ما هي الصيغة الكيميائية للبروبان؟</p>
+                <div class="flashcard-answer" style="display: none;">C<sub>3</sub>H<sub>8</sub></div>
+            </div>
+            <div class="question flashcard" data-answer="CH<sub>3</sub>CHO">
+                <p>ما هي الصيغة الكيميائية للأسيتالدهيد؟</p>
+                <div class="flashcard-answer" style="display: none;">CH<sub>3</sub>CHO</div>
+            </div>
+            <div class="question flashcard" data-answer="CH<sub>3</sub>COCH<sub>3</sub>">
+                <p>ما هي الصيغة الكيميائية للأسيتون؟</p>
+                <div class="flashcard-answer" style="display: none;">CH<sub>3</sub>COCH<sub>3</sub></div>
+            </div>
+            <div class="question flashcard" data-answer="C<sub>2</sub>H<sub>2</sub>">
+                <p>ما هي الصيغة الكيميائية للأسيتيلين؟</p>
+                <div class="flashcard-answer" style="display: none;">C<sub>2</sub>H<sub>2</sub></div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="showAnswer">عرض الإجابة</button>
+            <button id="next">التالي</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
